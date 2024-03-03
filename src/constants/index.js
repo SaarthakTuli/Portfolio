@@ -1,3 +1,7 @@
+import { FaGithub, FaLinkedin, FaDribbble, FaItchIo } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+
 import {
   mobile,
   backend,
@@ -5,6 +9,7 @@ import {
   web,
   javascript,
   typescript,
+  nextjs,
   html,
   css,
   reactjs,
@@ -14,7 +19,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -23,6 +27,19 @@ import {
   jobit,
   tripguide,
   threejs,
+  buildnow,
+  aws,
+  cpp,
+  java,
+  ml,
+  mysql,
+  python,
+  swiftui,
+  shoppy,
+  dashy,
+  metaverses,
+  vionix,
+  sggscc,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +48,17 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+
+  {
+    id: "tech",
+    title: "Technologies",
   },
   {
     id: "contact",
@@ -42,19 +68,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "MERN Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Machine Learning",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "IOS Developer",
+    icon: mobile,
+  },
+  {
+    title: "UI/UX Designer",
     icon: creator,
   },
 ];
@@ -73,16 +99,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -97,74 +115,66 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "MySql",
+    icon: mysql,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "SwiftUI",
+    icon: swiftui,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Machine Learning Resarch Intern",
+    company_name: "SGGSCC, DU",
+    company_website: "https://www.sggscc.ac.in/",
+    icon: sggscc,
+    date: "June 2022 - present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Research Project - A Solution on effective ailment analysis: Case Study on COVID During Pandemic",
+      "Research Paper - Analysis of Computational Intelligence Techniques for COVID-19 Prediction",
+      "Research Paper - Detection of COVID-19 using Stacked Machine Learning Models: An Empirical Investigation",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front-End Developer",
+    company_name: "Buildnow",
+    company_website: "https://www.buildnow.sa/",
+    icon: buildnow,
+    date: "March 2023 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining the software using React.js and other related technologies",
+      "Collaborating with backend team to work on API call fixes",
+      "Implimenting and Unit Testing design Components in Storybook for the new NextJS Application",
+      "Participating in design and code reviews for Version 3.0",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Machine Learning Resarch Intern",
+    company_name: "Vionix Biosciences",
+    company_website: "https://www.vionix.bio/",
+    icon: vionix,
+    date: "September 2023 - present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing models for Analysis of Mass Spectometry Data",
+      "Running Automated ML tests in Azure on the models",
     ],
   },
 ];
@@ -198,68 +208,111 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Shoppy-IO",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web-based E-Commerce platform with intergrated payment services for Boat products",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sanity",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "stripe",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: shoppy,
+    source_code_link: "https://github.com/SaarthakTuli/shoppy-io",
+    live_site_link: "https://shoppy-io.netlify.app",
+  },
+  {
+    name: "Dashy",
+    description:
+      "A React Web application that acts as a dashboard viewing to supercharge managers",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dashy,
+    source_code_link: "https://github.com/SaarthakTuli/admin-dashboard",
+    live_site_link: "https://dashy-admin.netlify.app/",
+  },
+  {
+    name: "Metaverses",
+    description:
+      "Web-based Application which shows the power of 3D Rendering and smooth motion animations with NextJS",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "blender",
+        color: "green-text-gradient",
+      },
+      {
+        name: "motion",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: metaverses,
+    source_code_link: "https://github.com/SaarthakTuli/metaverses",
+    live_site_link: "https://multiverse-madness.netlify.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const contactLinks = [
+  {
+    icon: FaLinkedin,
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/saarthak-tuli-5395aa1ab/",
+  },
+  {
+    icon: FaGithub,
+    name: "Github",
+    href: "https://github.com/SaarthakTuli",
+  },
+  {
+    icon: FaDribbble,
+    name: "Dribbble",
+    href: "https://dribbble.com/Saarthak_Tuli",
+  },
+  {
+    icon: FaItchIo,
+    name: "Itch.io",
+    href: "https://codertuli.itch.io/",
+  },
+  {
+    icon: MdEmail,
+    name: "Email",
+    href: "mailto:saarthaktuli@gmail.com",
+  },
+  // {
+  //   icon: SiGooglescholar,
+  //   name: "Google Scholar",
+  //   href: "",
+  // },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  contactLinks,
+};
