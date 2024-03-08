@@ -40,6 +40,18 @@ import {
   metaverses,
   vionix,
   sggscc,
+  crypto,
+  hirehub,
+  expenditor,
+  natos,
+  lensvrum,
+  executiveowl,
+  firebase,
+  postman,
+  postgresql,
+  prisma,
+  sanity,
+  sass,
 } from "../assets";
 
 export const navLinks = [
@@ -91,6 +103,10 @@ const technologies = [
     icon: html,
   },
   {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
     name: "CSS 3",
     icon: css,
   },
@@ -137,6 +153,30 @@ const technologies = [
   {
     name: "SwiftUI",
     icon: swiftui,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Postman",
+    icon: postman,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Sanity",
+    icon: sanity,
+  },
+  {
+    name: "Sass",
+    icon: sass,
   },
 ];
 
@@ -211,67 +251,83 @@ const projects = [
     name: "Shoppy-IO",
     description:
       "Web-based E-Commerce platform with intergrated payment services for Boat products",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sanity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "pink-text-gradient",
-      },
-    ],
+    // tags: [
+    //   {
+    //     name: "nextjs",
+    //     color: "blue-text-gradient",
+    //   },
+    //   {
+    //     name: "sanity",
+    //     color: "green-text-gradient",
+    //   },
+    //   {
+    //     name: "stripe",
+    //     color: "pink-text-gradient",
+    //   },
+    // ],
     image: shoppy,
     source_code_link: "https://github.com/SaarthakTuli/shoppy-io",
     live_site_link: "https://shoppy-io.netlify.app",
   },
+
   {
-    name: "Dashy",
-    description:
-      "A React Web application that acts as a dashboard viewing to supercharge managers",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "syncfusion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: dashy,
-    source_code_link: "https://github.com/SaarthakTuli/admin-dashboard",
-    live_site_link: "https://dashy-admin.netlify.app/",
+    name: "ExecutiveOwl",
+    description: "",
+    image: executiveowl,
+    source_code_link: "https://github.com/SaarthakTuli/ExecutiveOwl",
+    live_site_link: "https://executive-owl.vercel.app/",
   },
   {
     name: "Metaverses",
     description:
       "Web-based Application which shows the power of 3D Rendering and smooth motion animations with NextJS",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "blender",
-        color: "green-text-gradient",
-      },
-      {
-        name: "motion",
-        color: "pink-text-gradient",
-      },
-    ],
     image: metaverses,
     source_code_link: "https://github.com/SaarthakTuli/metaverses",
     live_site_link: "https://multiverse-madness.netlify.app/",
+  },
+  {
+    name: "Dashy",
+    description:
+      "A React Web application that acts as a dashboard viewing to supercharge managers",
+    image: dashy,
+    source_code_link: "https://github.com/SaarthakTuli/admin-dashboard",
+    live_site_link: "https://dashy-admin.netlify.app/",
+  },
+  {
+    name: "Crypto Marketplace",
+    description: "",
+    image: crypto,
+    source_code_link: "https://github.com/SaarthakTuli/crypto-market",
+    live_site_link: "https://crypto-market-showcase.netlify.app/",
+  },
+  {
+    name: "HireHub",
+    description: "",
+    image: hirehub,
+    source_code_link: "https://github.com/SaarthakTuli/HireHub",
+    live_site_link: null,
+  },
+  {
+    name: "Expenditor",
+    description: "",
+    image: expenditor,
+    source_code_link: "https://github.com/SaarthakTuli/Expenditor",
+    live_site_link: null,
+  },
+  {
+    name: "Natos",
+    description: "",
+    image: natos,
+
+    source_code_link: "https://github.com/SaarthakTuli/Natos",
+    live_site_link: null,
+  },
+  {
+    name: "LensVrum",
+    description: "",
+    image: lensvrum,
+    source_code_link: "https://github.com/SaarthakTuli/LensVrum",
+    live_site_link: null,
   },
 ];
 
@@ -308,8 +364,22 @@ const contactLinks = [
   // },
 ];
 
+const tech = technologies.sort(function (a, b) {
+  let x = a.name.toLowerCase();
+  let y = b.name.toLowerCase();
+
+  if (x > y) {
+    return 1;
+  }
+  if (x < y) {
+    return -1;
+  }
+  return 0;
+});
+
 export {
   services,
+  tech,
   technologies,
   experiences,
   testimonials,

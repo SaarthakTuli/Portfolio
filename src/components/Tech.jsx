@@ -1,6 +1,6 @@
 import { BallCanvas } from "./canvas";
 import SectionWrapper from "../hoc/SectionWrapper";
-import { technologies } from "../constants";
+import { technologies, tech } from "../constants";
 
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
@@ -29,7 +29,7 @@ const TechCard = () => {
   return (
     <>
       {" "}
-      {technologies.map(({ name, icon }, index) => (
+      {tech.map(({ name, icon }, index) => (
         <Tilt className="xs:w-[200px] w-full" key={index}>
           <motion.div
             variants={fadeIn("right", "spring", index * 0.1, 0.75)}
@@ -45,9 +45,11 @@ const TechCard = () => {
             >
               <img
                 src={icon}
-                alt="web-development"
-                className="w-16 h-16 object-contain"
-              />
+                alt={name}
+                className={`w-16 h-16 object-contain ${
+                  name === "Next JS" || name === "Prisma" ? "invert" : ""
+                }`}
+              />{" "}
               <h3 className="text-white text-[20px] font-bold text-center">
                 {" "}
                 {name}{" "}

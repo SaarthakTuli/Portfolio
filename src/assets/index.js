@@ -29,6 +29,12 @@ import mysql from "./tech/mysql.png";
 import python from "./tech/python.png";
 import swiftui from "./tech/swiftui.png";
 import nextjs from "./tech/nextjs.png";
+import firebase from "./tech/firebase.png";
+import postgresql from "./tech/postgresql.png";
+import postman from "./tech/postman.png";
+import prisma from "./tech/prisma.png";
+import sanity from "./tech/sanity.png";
+import sass from "./tech/sass.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -41,9 +47,16 @@ import sggscc from "./company/sggscc.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import shoppy from "./shoppy-io.jpg";
+// import shoppy from "./shoppy-io.jpg";
+import shoppy from "./shoppy.png";
 import dashy from "./dashy.jpg";
-import metaverses from "./metaverses.jpg";
+import metaverses from "./metaverses.png";
+import crypto from "./crypto-market.png";
+import hirehub from "./hirehub-show.png";
+import expenditor from "./expenditor.png";
+import natos from "./natos.png";
+import lensvrum from "./lensvrum.png";
+import executiveowl from "./executiveowl.jpg";
 
 export {
   logo,
@@ -88,4 +101,16 @@ export {
   nextjs,
   vionix,
   sggscc,
+  crypto,
+  hirehub,
+  expenditor,
+  natos,
+  lensvrum,
+  executiveowl,
+  firebase,
+  postman,
+  postgresql,
+  prisma,
+  sanity,
+  sass,
 };
