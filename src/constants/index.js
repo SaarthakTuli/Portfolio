@@ -246,25 +246,26 @@ const testimonials = [
   },
 ];
 
+// tags: [
+//   {
+//     name: "nextjs",
+//     color: "blue-text-gradient",
+//   },
+//   {
+//     name: "sanity",
+//     color: "green-text-gradient",
+//   },
+//   {
+//     name: "stripe",
+//     color: "pink-text-gradient",
+//   },
+// ],
 const projects = [
   {
     name: "Shoppy-IO",
     description:
       "Web-based E-Commerce platform with intergrated payment services for Boat products",
-    // tags: [
-    //   {
-    //     name: "nextjs",
-    //     color: "blue-text-gradient",
-    //   },
-    //   {
-    //     name: "sanity",
-    //     color: "green-text-gradient",
-    //   },
-    //   {
-    //     name: "stripe",
-    //     color: "pink-text-gradient",
-    //   },
-    // ],
+
     image: shoppy,
     source_code_link: "https://github.com/SaarthakTuli/shoppy-io",
     live_site_link: "https://shoppy-io.netlify.app",
@@ -272,7 +273,8 @@ const projects = [
 
   {
     name: "ExecutiveOwl",
-    description: "",
+    description:
+      "ReactJS Admin Dashboard Website for monitor sales and predict sales for next year using Machine Learning",
     image: executiveowl,
     source_code_link: "https://github.com/SaarthakTuli/ExecutiveOwl",
     live_site_link: "https://executive-owl.vercel.app/",
@@ -295,28 +297,32 @@ const projects = [
   },
   {
     name: "Crypto Marketplace",
-    description: "",
+    description:
+      "A React Native marketplace to view NFT's to buy and sell and favourite the one's you like for later",
     image: crypto,
     source_code_link: "https://github.com/SaarthakTuli/crypto-market",
     live_site_link: "https://crypto-market-showcase.netlify.app/",
   },
   {
     name: "HireHub",
-    description: "",
+    description:
+      "A React Native App that uses Google Careers to help you search and apply for your ideal job",
     image: hirehub,
     source_code_link: "https://github.com/SaarthakTuli/HireHub",
     live_site_link: null,
   },
   {
     name: "Expenditor",
-    description: "",
+    description:
+      "A SwiftUI expense tracking app to help you meet your budget goals and plan your monthly expenses effectively",
     image: expenditor,
     source_code_link: "https://github.com/SaarthakTuli/Expenditor",
     live_site_link: null,
   },
   {
     name: "Natos",
-    description: "",
+    description:
+      "A SwiftUI To-Do list with color coded tasks for grouping and CRUD methods to the AppStorage",
     image: natos,
 
     source_code_link: "https://github.com/SaarthakTuli/Natos",
@@ -324,7 +330,8 @@ const projects = [
   },
   {
     name: "LensVrum",
-    description: "",
+    description:
+      "A SwitfUI E-commerce lens buying platform where you can watch your lens in 3D before picking the right frame for you",
     image: lensvrum,
     source_code_link: "https://github.com/SaarthakTuli/LensVrum",
     live_site_link: null,
