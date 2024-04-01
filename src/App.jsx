@@ -8,6 +8,8 @@ import {
   Tech,
   Footer,
   FullScreenButton,
+  Contact,
+  StarsCanvas,
 } from "./components";
 import Projects from "./components/Projects";
 
@@ -23,6 +25,10 @@ const App = () => {
         <Experience />
         <Projects />
         <Tech />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>{" "}
         <Footer />
         <FullScreenButton />
       </div>{" "}
