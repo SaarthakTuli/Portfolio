@@ -52,6 +52,7 @@ import {
   prisma,
   sanity,
   sass,
+  researchimage,
 } from "../assets";
 
 export const navLinks = [
@@ -270,7 +271,6 @@ const projects = [
     source_code_link: "https://github.com/SaarthakTuli/shoppy-io",
     live_site_link: "https://shoppy-io.netlify.app",
   },
-
   {
     name: "ExecutiveOwl",
     description:
@@ -286,6 +286,14 @@ const projects = [
     image: metaverses,
     source_code_link: "https://github.com/SaarthakTuli/metaverses",
     live_site_link: "https://multiverse-madness.netlify.app/",
+  },
+  {
+    name: "Research Paper",
+    description:
+      "Analysis of Computational Intelligence Techniques for COVID-19 Prediction",
+    image: researchimage,
+    source_code_link: null,
+    live_site_link: "https://ieeexplore.ieee.org/abstract/document/10465833",
   },
   {
     name: "Dashy",
@@ -364,11 +372,11 @@ const contactLinks = [
     name: "Email",
     href: "mailto:saarthaktuli@gmail.com",
   },
-  // {
-  //   icon: SiGooglescholar,
-  //   name: "Google Scholar",
-  //   href: "",
-  // },
+  {
+    icon: SiGooglescholar,
+    name: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=Yepa4kgAAAAJ&hl=en",
+  },
 ];
 
 const tech = technologies.sort(function (a, b) {

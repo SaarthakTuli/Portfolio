@@ -57,6 +57,7 @@ import expenditor from "./expenditor.png";
 import natos from "./natos.png";
 import lensvrum from "./lensvrum.png";
 import executiveowl from "./executiveowl.jpg";
+import researchimage from "./researchpaper_image.jpg";
 
 export {
   logo,
@@ -113,4 +114,5 @@ export {
   prisma,
   sanity,
   sass,
+  researchimage,
 };
